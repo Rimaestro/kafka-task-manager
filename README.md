@@ -12,7 +12,11 @@ Aplikasi ini adalah implementasi sistem terdistribusi menggunakan Apache Kafka u
 
 ## 📸 Screenshot
 
-![Aplikasi Kafka Task Manager](screenshot.png)
+### Producer Application
+![Producer Application](screenshots/producer-app.png)
+
+### Consumer Application
+![Consumer Application](screenshots/consumer-app.png)
 
 Aplikasi ini memiliki tampilan modern dengan:
 - Desain material dengan efek bayangan dan sudut melengkung
