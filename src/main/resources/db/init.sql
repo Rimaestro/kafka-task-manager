@@ -1,0 +1,15 @@
+-- Buat database jika belum ada
+CREATE DATABASE IF NOT EXISTS taskdb;
+
+-- Gunakan database taskdb
+USE taskdb;
+
+-- Buat tabel tasks
+CREATE TABLE IF NOT EXISTS tasks (
+    id VARCHAR(36) NOT NULL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    status ENUM('TODO', 'IN_PROGRESS', 'DONE') NOT NULL DEFAULT 'TODO',
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; 
